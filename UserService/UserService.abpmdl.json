@@ -1,0 +1,79 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "UserService.Domain.Shared": {
+      "path": "src/UserService.Domain.Shared/UserService.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "UserService.Domain": {
+      "path": "src/UserService.Domain/UserService.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "UserService.Application.Contracts": {
+      "path": "src/UserService.Application.Contracts/UserService.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "UserService.Application": {
+      "path": "src/UserService.Application/UserService.Application.abppkg.json",
+      "folder": "src"
+    },
+    "UserService.EntityFrameworkCore": {
+      "path": "src/UserService.EntityFrameworkCore/UserService.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "UserService.MongoDB": {
+      "path": "src/UserService.MongoDB/UserService.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "UserService.HttpApi": {
+      "path": "src/UserService.HttpApi/UserService.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "UserService.HttpApi.Client": {
+      "path": "src/UserService.HttpApi.Client/UserService.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "UserService.TestBase": {
+      "path": "test/UserService.TestBase/UserService.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "UserService.EntityFrameworkCore.Tests": {
+      "path": "test/UserService.EntityFrameworkCore.Tests/UserService.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "UserService.MongoDB.Tests": {
+      "path": "test/UserService.MongoDB.Tests/UserService.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "UserService.Domain.Tests": {
+      "path": "test/UserService.Domain.Tests/UserService.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "UserService.Application.Tests": {
+      "path": "test/UserService.Application.Tests/UserService.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "UserService.HttpApi.Host": {
+      "path": "host/UserService.HttpApi.Host/UserService.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "UserService.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/UserService.HttpApi.Client.ConsoleTestApp/UserService.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "UserService.IdentityServer": {
+      "path": "host/UserService.IdentityServer/UserService.IdentityServer.abppkg.json",
+      "folder": "host"
+    },
+    "UserService.Host.Shared": {
+      "path": "host/UserService.Host.Shared/UserService.Host.Shared.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "IdentityService.Domain.Shared": {
+      "path": "src/IdentityService.Domain.Shared/IdentityService.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "IdentityService.Domain": {
+      "path": "src/IdentityService.Domain/IdentityService.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "IdentityService.Application.Contracts": {
+      "path": "src/IdentityService.Application.Contracts/IdentityService.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "IdentityService.Application": {
+      "path": "src/IdentityService.Application/IdentityService.Application.abppkg.json",
+      "folder": "src"
+    },
+    "IdentityService.EntityFrameworkCore": {
+      "path": "src/IdentityService.EntityFrameworkCore/IdentityService.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "IdentityService.MongoDB": {
+      "path": "src/IdentityService.MongoDB/IdentityService.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "IdentityService.HttpApi": {
+      "path": "src/IdentityService.HttpApi/IdentityService.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "IdentityService.HttpApi.Client": {
+      "path": "src/IdentityService.HttpApi.Client/IdentityService.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "IdentityService.TestBase": {
+      "path": "test/IdentityService.TestBase/IdentityService.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "IdentityService.EntityFrameworkCore.Tests": {
+      "path": "test/IdentityService.EntityFrameworkCore.Tests/IdentityService.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "IdentityService.MongoDB.Tests": {
+      "path": "test/IdentityService.MongoDB.Tests/IdentityService.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "IdentityService.Domain.Tests": {
+      "path": "test/IdentityService.Domain.Tests/IdentityService.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "IdentityService.Application.Tests": {
+      "path": "test/IdentityService.Application.Tests/IdentityService.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "IdentityService.HttpApi.Host": {
+      "path": "host/IdentityService.HttpApi.Host/IdentityService.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "IdentityService.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/IdentityService.HttpApi.Client.ConsoleTestApp/IdentityService.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "IdentityService.IdentityServer": {
+      "path": "host/IdentityService.IdentityServer/IdentityService.IdentityServer.abppkg.json",
+      "folder": "host"
+    },
+    "IdentityService.Host.Shared": {
+      "path": "host/IdentityService.Host.Shared/IdentityService.Host.Shared.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

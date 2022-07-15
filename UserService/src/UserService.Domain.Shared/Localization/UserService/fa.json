@@ -1,0 +1,11 @@
+{
+  "culture": "fa",
+  "texts": {
+    "MyAccount": "حساب من",
+    "SamplePageMessage": "یک پیام ساده",
+    "UserService:User:UserInputNotValid:0000": "ورودی پوچ است",
+    "UserService:User:UserIdNotValid:0001": "شناسه کاربر معتبر نیست ",
+    "UserService:User:UserIdDuplicated:0002": "قبلا کاربری با شناسه '{ Id = {Id} }' ثبت شده است",
+    "UserService:User:UserNotFound:0003": " کاربری با شناسه '{ Id = {Id} }' یافت نشد"
+  }
+}

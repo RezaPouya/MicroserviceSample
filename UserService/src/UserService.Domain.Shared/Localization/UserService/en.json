@@ -1,0 +1,11 @@
+{
+  "culture": "en",
+  "texts": {
+    "MyAccount": "My account",
+    "SamplePageMessage": "A sample page for the UserService module",
+    "UserService:User:UserInputNotValid:0000": "The user input is not valid.",
+    "UserService:User:UserIdNotValid:0001": "The user id  is not valid.",
+    "UserService:User:UserIdDuplicated:0002": "The user id '{ Id = {Id} }' duplicated",
+    "UserService:User:UserNotFound:0003": "The user with id '{ Id = {Id} }' not found."
+  }
+}

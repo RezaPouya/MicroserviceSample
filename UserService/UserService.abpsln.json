@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "UserService": {
+      "path": "UserService.abpmdl.json"
+    }
+  }
+}
