@@ -5,6 +5,8 @@
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
 		<RootNamespace>IdentityManagment</RootNamespace>
+		<PakageVersion>1.0.0</PakageVersion>
+		<Version>1.1.0</Version>
 	</PropertyGroup>
 
 	<ItemGroup>

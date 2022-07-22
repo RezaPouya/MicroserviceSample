@@ -23,10 +23,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityManagment.HttpApi.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityManagment.HttpApi.Host", "host\IdentityManagment.HttpApi.Host\IdentityManagment.HttpApi.Host.csproj", "{37B135B0-DAFE-4616-B25C-1BDF32FC44A2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "console", "console", "{B87D21C5-6EAF-4E14-91F0-045AAC21183B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityManagment.DataSeeder", "console\IdentityManagment.DataSeeder\IdentityManagment.DataSeeder.csproj", "{ADF99384-E2A8-4248-BE9C-57BA3F8B4827}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,10 +61,6 @@ Global
 		{37B135B0-DAFE-4616-B25C-1BDF32FC44A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37B135B0-DAFE-4616-B25C-1BDF32FC44A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37B135B0-DAFE-4616-B25C-1BDF32FC44A2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ADF99384-E2A8-4248-BE9C-57BA3F8B4827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ADF99384-E2A8-4248-BE9C-57BA3F8B4827}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ADF99384-E2A8-4248-BE9C-57BA3F8B4827}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ADF99384-E2A8-4248-BE9C-57BA3F8B4827}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,7 +74,6 @@ Global
 		{077AA5F8-8B61-420C-A6B5-0150A66FDB34} = {649A3FFA-182F-4E56-9717-E6A9A2BEC545}
 		{36E2735F-CEAB-44C8-A6D1-2CDAFF399751} = {649A3FFA-182F-4E56-9717-E6A9A2BEC545}
 		{37B135B0-DAFE-4616-B25C-1BDF32FC44A2} = {E400416D-2895-4512-9D17-90681EEC7E0A}
-		{ADF99384-E2A8-4248-BE9C-57BA3F8B4827} = {B87D21C5-6EAF-4E14-91F0-045AAC21183B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4324B3B4-B60B-4E3C-91D8-59576B4E26DD}

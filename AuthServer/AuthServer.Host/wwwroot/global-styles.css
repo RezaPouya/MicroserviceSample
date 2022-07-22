@@ -1,0 +1,30 @@
+/* Your Global Styles */
+@font-face {
+    font-family: "IranSans";
+    src: url("./libs/fonts/IRANSans.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "IranSans";
+    src: url("./libs/fonts/IRANSansBold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body *:not(.fa) {
+    font-family: "IranSans" !important;
+}
+
+.abp-account-container {
+    height: auto !important;
+    margin: auto !important;
+    vertical-align: middle !important;
+}
+
+    .abp-account-container > div {
+        height: auto !important;
+        margin: auto !important;
+        vertical-align: middle !important;
+    }
