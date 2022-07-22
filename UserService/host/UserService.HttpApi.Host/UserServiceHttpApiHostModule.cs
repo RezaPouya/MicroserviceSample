@@ -34,6 +34,7 @@ public class UserServiceHttpApiHostModule : AbpModule
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
         var hostingEnvironment = context.Services.GetHostingEnvironment();
+
         var configuration = context.Services.GetConfiguration();
 
         context.ConfigureUseSqlServer();

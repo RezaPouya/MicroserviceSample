@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "IdentityManagment": {
+      "path": "IdentityManagment.abpmdl.json"
+    }
+  }
+}

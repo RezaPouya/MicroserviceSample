@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Authorization;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 using UserService.DTOs.inputs;
+using UserService.Permissions;
 
 namespace UserService.Users
 {
@@ -17,6 +19,12 @@ namespace UserService.Users
         public async Task CreateAsync(UserInputDto inputDto, CancellationToken cancellationToken)
         {
             await _userManager.CreateAsync(inputDto, cancellationToken);
+        }
+
+        [Authorize(UserServicePermissions.Users.Read)]
+        public Task<string> GetAuthorized()
+        {
+            return "This is an authorized access with permission";
         }
 
         public async Task RemoveAsync(Guid id, CancellationToken cancellationToken)

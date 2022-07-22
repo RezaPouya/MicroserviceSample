@@ -13,5 +13,8 @@ namespace UserService.Users
         Task CreateAsync(UserInputDto inputDto, CancellationToken cancellationToken);
 
         Task RemoveAsync(Guid id, CancellationToken cancellationToken);
+
+
+        Task<string> GetAuthorized();
     }
 }

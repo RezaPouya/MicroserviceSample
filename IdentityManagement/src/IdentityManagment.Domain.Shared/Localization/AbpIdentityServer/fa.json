@@ -1,0 +1,46 @@
+﻿{
+  "culture": "fa",
+  "texts": {
+    "'{0}' and '{1}' do not match.": "'{0}' و '{1}' مطابقت ندارند.",
+    "The {0} field is not a valid credit card number.": "فیلد {0} شماره کارت اعتباری معتبری نیست.",
+    "{0} is not valid.": "{0} معتبر نیست.",
+    "The {0} field is not a valid e-mail address.": "فیلد {0} یک آدرس ایمیل معتبر نیست.",
+    "The {0} field only accepts files with the following extensions: {1}": "فیلد {0} فقط پرونده هایی با پسوندهای زیر را می پذیرد: {1}",
+    "The field {0} must be a string or array type with a maximum length of '{1}'.": "فیلد {0} باید از نوع رشته یا آرایه باشد و حداکثر طول آن '{1}' باشد.",
+    "The field {0} must be a string or array type with a minimum length of '{1}'.": "فیلد {0} باید از نوع رشته یا آرایه باشد که حداقل طول آن '{1}' باشد.",
+    "The {0} field is not a valid phone number.": "فیلد {0} شماره تلفن معتبری نیست.",
+    "The field {0} must be between {1} and {2}.": "فیلد {0} باید بین {1} و {2} باشد.",
+    "The field {0} must match the regular expression '{1}'.": "فیلد {0} با قالب درخواستی مطابقت ندارد.",
+    "The {0} field is required.": "فیلد {0} الزامی است.",
+    "The field {0} must be a string with a maximum length of {1}.": "فیلد {0} باید یک رشته با حداکثر طول {1} باشد.",
+    "The field {0} must be a string with a minimum length of {2} and a maximum length of {1}.": "فیلد {0} باید رشته ای با حداقل طول {2} و حداکثر طول {1} باشد.",
+    "The {0} field is not a valid fully-qualified http, https, or ftp URL.": "فیلد {0} یک URL کاملاً معتبر http ، https یا ftp نیست.",
+    "The field {0} is invalid.": "فیلد {0} نامعتبر است.",
+    "ThisFieldIsNotAValidCreditCardNumber.": "این فیلد شماره کارت اعتباری معتبری نیست.",
+    "ThisFieldIsNotValid.": "این فیلد معتبر نیست",
+    "ThisFieldIsNotAValidEmailAddress.": "این فیلد یک آدرس ایمیل معتبر نیست.",
+    "ThisFieldOnlyAcceptsFilesWithTheFollowingExtensions:{0}": "این فیلد فقط پرونده هایی با پسوندهای زیر را می پذیرد: {0}",
+    "ThisFieldMustBeAStringOrArrayTypeWithAMaximumLengthOf{0}": "این فیلد باید از نوع رشته یا آرایه باشد و حداکثر طول آن '{0}' باشد.",
+    "ThisFieldMustBeAStringOrArrayTypeWithAMinimumLengthOf{0}": "این فیلد باید از نوع رشته یا آرایه باشد که حداقل طول آن '{0}' باشد.",
+    "ThisFieldIsNotAValidPhoneNumber.": "این فیلد شماره تلفن معتبری نیست.",
+    "ThisFieldMustBeBetween{0}And{1}": "این فیلد باید بین {0} تا {1} باشد.",
+    "ThisFieldMustMatchTheRegularExpression{0}": "این فیلد باید با عبارت منظم '{0}' مطابقت داشته باشد.",
+    "ThisFieldIsRequired.": "این فیلد الزامی است",
+    "ThisFieldMustBeAStringWithAMaximumLengthOf{0}": "این فیلد باید رشته ای با حداکثر طول {0} باشد.",
+    "ThisFieldMustBeAStringWithAMinimumLengthOf{1}AndAMaximumLengthOf{0}": "این فیلد باید رشته ای با حداقل طول {1} و حداکثر طول {0} باشد.",
+    "ThisFieldIsNotAValidFullyQualifiedHttpHttpsOrFtpUrl": "این فیلد یک URL کاملاً معتبر http ، https یا ftp نیست.",
+    "ThisFieldIsInvalid.": "این فیلد نامعتبر است",
+    "InvalidUserNameOrPassword": "نام کاربری یا رمز عبور معتبر نیست!",
+    "InvalidUsername": "نام کاربری معتبر نیست!",
+    "LoginIsNotAllowed": "شما اجازه ورود ندارید! شما باید ایمیل یا شماره تلفن خود را تایید کنید",
+    "Volo.IdentityServer:DuplicateIdentityResourceName": "نام {Name} در Identity Resource هم اکنون موجود است",
+    "Volo.IdentityServer:DuplicateApiResourceName": "نام {Name} در Api Resource هم اکنون موجود است",
+    "Volo.IdentityServer:DuplicateApiScopeName": "نام {Name} در Api Scope هم اکنون موجود است",
+    "Volo.IdentityServer:DuplicateClientId": " {ClientId} اکنون در موجود ClientId است",
+    "UserLockedOut": "این حساب کاربری به دلیل ورود های نامعتبر مسدود است. لطفا چند دقیقه دیگر مجددا تلاش کنید",
+    "TheTargetUserIsNotLinkedToYou": "کاربر موردنظر به شما متصل نیست!"
+  }
+
+  }
+
+
