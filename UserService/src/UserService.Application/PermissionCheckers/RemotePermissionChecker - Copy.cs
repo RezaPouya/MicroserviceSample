@@ -43,7 +43,10 @@ namespace UserService.PermissionCheckers
         public async Task<bool> IsGrantedAsync(ClaimsPrincipal claimsPrincipal, string name)
         {
             var userId = claimsPrincipal.FindUserId()?.ToString();
-            var roles = claimsPrincipal.FindFirst("role");
+
+            var user = _currentUser.Id.Value;
+            var roles = _currentUser.FindClaimValue("role");
+            //var roles = claimsPrincipal.FindFirst("role");
 
             if (userId is null)
                 throw new System.Exception("You don't have sufficient authorization");
@@ -52,7 +55,7 @@ namespace UserService.PermissionCheckers
             {
                 UserId = new System.Guid(userId),
                 Permission = name,
-                Roles = new List<string> { "admin" }
+                Roles = new List<string> {"admin"}
             };
 
             return await _permissionGrantAppService.HasAccessAsync(inputDto);
