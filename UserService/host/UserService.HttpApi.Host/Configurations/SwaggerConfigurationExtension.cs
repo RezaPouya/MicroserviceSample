@@ -11,9 +11,9 @@ namespace UserService.Configurations
             var configuration = context.Services.GetConfiguration();
 
             var allowedScopes = new Dictionary<string, string>() {
-                {"UserService", "UserService API"},
-                {"gateway" , "Gateway" },
-                {"identityService" , "IdentityService API" }
+                {"user_service", "UserService API"},
+                {"internal_service_gateway" , "Internal Gateway" },
+                
             };
 
             var authority = configuration["AuthServer:Authority"].ToString();

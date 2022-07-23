@@ -11,10 +11,10 @@ namespace IdentityManagment.PermissionGrants
 {
     public interface ICustomPermissionGrantRepository : IRepository<PermissionGrant, Guid>
     {
-        Task<IEnumerable<PermissionGrant>> GetAllAsync(string providername, CancellationToken cancellationToken);
-        Task<IEnumerable<PermissionGrant>> GetAllAsync(IEnumerable<string> providerNames, CancellationToken cancellationToken);
+        Task<IEnumerable<PermissionGrant>> GetAllAsync(string providerKey, CancellationToken cancellationToken);
+        Task<IEnumerable<PermissionGrant>> GetAllAsync(IEnumerable<string> providerKeys, CancellationToken cancellationToken);
 
-        Task<bool> IsExistAsync(string providername, CancellationToken cancellationToken);
-        Task<bool> IsExistAsync(IEnumerable<string> providerNames, CancellationToken cancellationToken);
+        Task<bool> IsExistAsync(string providerKey, CancellationToken cancellationToken);
+        Task<bool> IsExistAsync(IEnumerable<string> providerKeys, CancellationToken cancellationToken);
     }
 }

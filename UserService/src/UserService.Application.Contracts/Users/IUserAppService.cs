@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Authorization;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 using UserService.DTOs.inputs;
@@ -16,5 +17,7 @@ namespace UserService.Users
 
 
         Task<string> GetAuthorized();
+        [Authorize("UserService.Users.Read")]
+        Task<string> GetAuthorizedWithPermission();
     }
 }

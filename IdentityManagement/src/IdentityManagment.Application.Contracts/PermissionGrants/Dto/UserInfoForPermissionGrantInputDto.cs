@@ -4,6 +4,7 @@ using System.Text;
 
 namespace IdentityManagment.PermissionGrants.Dto
 {
+    [Serializable]
     public class UserInfoForPermissionGrantInputDto
     {
         public Guid UserId { get; set; }
@@ -12,4 +13,9 @@ namespace IdentityManagment.PermissionGrants.Dto
 
         public string Permission { get; set; }
     }
+
+  
 }
+
+
+

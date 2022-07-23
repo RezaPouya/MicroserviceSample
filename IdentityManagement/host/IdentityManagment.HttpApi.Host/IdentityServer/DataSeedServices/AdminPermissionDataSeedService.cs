@@ -1,4 +1,5 @@
 ﻿using IdentityManagment.Constants;
+using IdentityManagment.Permissions;
 using IdentityManagment.Permissions.Permissions;
 using System.Collections.Generic;
 using System.Linq;
@@ -63,7 +64,9 @@ namespace IdentityManagment.IdentityServer.DataSeedServices
         private static List<string> GetDefaultPermissionForAdmin()
         {
             List<string> defaultPermission = AdminPermissions.Abp.GetAll().ToList();
-            
+            List<string> userPermissions = UserServicePermissions.GetAll().ToList();
+
+
             defaultPermission.AddRange(new List<string>() {
                 "SettingManagement.Emailing",
                 //"FeatureManagement.ManageHostFeatures",
@@ -74,6 +77,8 @@ namespace IdentityManagment.IdentityServer.DataSeedServices
                 //"AbpTenantManagement.Tenants",
                 //"AbpTenantManagement.Tenants.Update"
             });
+
+            defaultPermission.AddRange(userPermissions);
 
             return defaultPermission.Distinct().ToList();
         }

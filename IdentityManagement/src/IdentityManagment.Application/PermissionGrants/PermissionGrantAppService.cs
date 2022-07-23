@@ -63,13 +63,15 @@ namespace IdentityManagment.PermissionGrants
 
         private async Task<bool> HasPermission(Guid userId, string permission, IEnumerable<string> roles)
         {
+
+            var providers = GetAllProviderNames(roles, userId);
             var permissionGrants = await _customPermissionGrantRepository
-                           .GetAllAsync(GetAllProviderNames(roles, userId), default);
+                           .GetAllAsync(providers, default);
 
             return permissionGrants.Any(p => p.Name.Equals(permission.Trim()));
         }
 
-        private static IEnumerable<string> GetAllProviderNames(IEnumerable<string> roles, Guid userId)
+        private static List<string> GetAllProviderNames(IEnumerable<string> roles, Guid userId)
         {
             var providerNames = roles.ToList();
             providerNames.Add(userId.ToString());

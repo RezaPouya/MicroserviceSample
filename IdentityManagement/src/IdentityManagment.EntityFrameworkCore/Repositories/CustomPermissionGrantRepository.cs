@@ -19,37 +19,37 @@ namespace IdentityManagment.Repositories
         {
         }
 
-        public async Task<IEnumerable<PermissionGrant>> GetAllAsync(string providername, CancellationToken cancellationToken)
+        public async Task<IEnumerable<PermissionGrant>> GetAllAsync(string providerKey, CancellationToken cancellationToken)
         {
             var queryAble = await GetQueryableAsync();
 
             return await queryAble.AsNoTracking()
-                .Where(p => p.ProviderName.Equals(providername))
+                .Where(p => p.ProviderKey.Equals(providerKey))
                 .ToListAsync(cancellationToken);
         }
 
-        public async Task<IEnumerable<PermissionGrant>> GetAllAsync(IEnumerable<string> providerNames, CancellationToken cancellationToken)
+        public async Task<IEnumerable<PermissionGrant>> GetAllAsync(IEnumerable<string> providerKeys, CancellationToken cancellationToken)
         {
             var queryAble = await GetQueryableAsync();
 
             return await queryAble.AsNoTracking()
-                .Where(p => providerNames.Contains(p.ProviderName))
+                .Where(p => providerKeys.Contains(p.ProviderKey))
                 .ToListAsync(cancellationToken);
         }
 
 
-        public async Task<bool> IsExistAsync(string providername, CancellationToken cancellationToken)
+        public async Task<bool> IsExistAsync(string providerKey, CancellationToken cancellationToken)
         {
             var queryAble = await GetQueryableAsync();
 
-            return await queryAble.AsNoTracking().AnyAsync(p => p.ProviderName.Equals(providername));
+            return await queryAble.AsNoTracking().AnyAsync(p => p.ProviderKey.Equals(providerKey));
         }
 
-        public async Task<bool> IsExistAsync(IEnumerable<string> providerNames, CancellationToken cancellationToken)
+        public async Task<bool> IsExistAsync(IEnumerable<string> providerKeys, CancellationToken cancellationToken)
         {
             var queryAble = await GetQueryableAsync();
 
-            return await queryAble.AsNoTracking().AnyAsync(p => providerNames.Contains(p.ProviderName));
+            return await queryAble.AsNoTracking().AnyAsync(p => providerKeys.Contains(p.ProviderKey));
         }
     }
 }

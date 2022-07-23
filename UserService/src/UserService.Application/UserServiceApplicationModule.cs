@@ -3,6 +3,10 @@ using Volo.Abp.AutoMapper;
 using Volo.Abp.Modularity;
 using Volo.Abp.Application;
 using IdentityService;
+using IdentityManagment;
+using Volo.Abp.Authorization.Permissions;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using UserService.PermissionCheckers;
 
 namespace UserService;
 
@@ -13,6 +17,7 @@ namespace UserService;
     typeof(AbpAutoMapperModule)
     )]
 [DependsOn(typeof(IdentityServiceHttpApiClientModule))]
+[DependsOn(typeof(IdentityManagmentHttpApiClientModule))]
 public class UserServiceApplicationModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)
@@ -22,5 +27,9 @@ public class UserServiceApplicationModule : AbpModule
         {
             options.AddMaps<UserServiceApplicationModule>(validate: true);
         });
+
+        //context.Services.Replace(ServiceDescriptor.Transient<IPermissionChecker, RemotePermissionChecker>());
+
+        context.Services.Replace(ServiceDescriptor.Transient<IPermissionChecker, RemotePermissionChecker2>());
     }
 }

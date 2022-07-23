@@ -1,10 +1,13 @@
 ﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.IdentityModel.Logging;
 using System.IO;
+using UserService.PermissionCheckers;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Serilog;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
+using Volo.Abp.Authorization.Permissions;
 using Volo.Abp.Autofac;
 using Volo.Abp.Caching.StackExchangeRedis;
 using Volo.Abp.EntityFrameworkCore.SqlServer;
@@ -56,6 +59,8 @@ public class UserServiceHttpApiHostModule : AbpModule
 
         // if we want to active rabbitMq , we should uncomment this and its module
         //context.ConfigureRabbitMq();
+
+        
     }
 
     public override void OnApplicationInitialization(ApplicationInitializationContext context)
@@ -117,10 +122,10 @@ public class UserServiceHttpApiHostModule : AbpModule
         app.UseAbpSwaggerUI(options =>
         {
             options.SwaggerEndpoint("/swagger/v1/swagger.json", "");
-            options.OAuthAppName("IdentityServer");
-            options.OAuthClientId("user_service");
-            options.OAuthClientSecret("PRWXzxUaWUcuh345asdfS9a#GE3jD+9?");
-            options.OAuthScopes(new string[] { "identity_service", "gateway", "user_service" });
+            options.OAuthAppName("AuthServer");
+            options.OAuthClientId("user_service_swagger");
+            options.OAuthClientSecret("1q2w3e*");
+            options.OAuthScopes(new string[] { "user_service", "internal_service_gateway" });
         });
     }
 

@@ -22,7 +22,13 @@ namespace UserService.Users
         }
 
         [Authorize(UserServicePermissions.Users.Read)]
-        public Task<string> GetAuthorized()
+        public async Task<string> GetAuthorizedWithPermission()
+        {
+            return "This is an authorized access with permission";
+        }
+
+        [Authorize()]
+        public async Task<string> GetAuthorized()
         {
             return "This is an authorized access with permission";
         }
